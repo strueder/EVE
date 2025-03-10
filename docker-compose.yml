@@ -9,7 +9,7 @@ services:
     ports:
       - "3000:3000"
     env_file:
-      - .env.frontend
+      - ./ENV/.env.frontend
     environment:
       - NODE_ENV=production
 
@@ -21,7 +21,7 @@ services:
     ports:
       - "4000:4000"
     env_file:
-      - .env.backend
+      - ./ENV/.env.backend
     environment:
       - NODE_ENV=production
 
@@ -31,6 +31,6 @@ services:
       context: ./packages/discord-bot
       dockerfile: Dockerfile
     env_file:
-      - .env.discord-bot
+      - ./ENV/.env.discord-bot
     environment:
       - NODE_ENV=production
