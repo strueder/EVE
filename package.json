@@ -1,0 +1,15 @@
+{
+    "name": "eve",
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
+    "scripts": {
+        "build": "lerna run build",
+        "dev": "lerna run dev"
+    },
+    "devDependencies": {
+        "lerna": "latest"
+    },
+    "packageManager": "yarn@4.7.0"
+}
