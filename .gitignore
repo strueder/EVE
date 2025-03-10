@@ -1,1 +1,5 @@
 node_modules
+ENV
+.env.backend
+.env.frontend
+.env.discord-bot

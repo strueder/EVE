@@ -1,0 +1,36 @@
+version: "3.8"
+
+services:
+  frontend:
+    container_name: eve-frontend
+    build:
+      context: ./packages/frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env.frontend
+    environment:
+      - NODE_ENV=production
+
+  backend:
+    container_name: eve-backend
+    build:
+      context: ./packages/backend
+      dockerfile: Dockerfile
+    ports:
+      - "4000:4000"
+    env_file:
+      - .env.backend
+    environment:
+      - NODE_ENV=production
+
+  discord-bot:
+    container_name: eve-discord-bot
+    build:
+      context: ./packages/discord-bot
+      dockerfile: Dockerfile
+    env_file:
+      - .env.discord-bot
+    environment:
+      - NODE_ENV=production
