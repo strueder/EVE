@@ -131,7 +131,7 @@ jobs:
 - **VPS_SSH_PRIVATE_KEY** – Privater SSH-Schlüssel für Deployment-User.
 - **VPS_USER** – VPS-Benutzername (z. B. `deploy`).
 - **VPS_HOST** – IP oder Domain des VPS.
-- **VPS_PORT** – SSH-Port (falls nicht 22).
+- **VPS_PORT** – SSH-Port.
 
 ## Zusammenfassung
 
