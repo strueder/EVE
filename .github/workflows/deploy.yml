@@ -21,7 +21,7 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.EVE_DEPLOY_KEY }}
 
-      # Deployment auslösen: Verbindung zum VPS herstellen, ins Repo wechseln, pullen und das Deploy-Skript ausführen. Check Secrets
+      # Deployment auslösen: Verbindung zum VPS herstellen, ins Repo wechseln, pullen und das Deploy-Skript ausführen.
       - name: Deploy to VPS
         run: |
           ssh -o StrictHostKeyChecking=no -p ${{ secrets.VPS_PORT }} ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} "cd /home/marvin/eve && ./deploy.sh"
