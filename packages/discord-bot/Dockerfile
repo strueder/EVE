@@ -1,4 +1,4 @@
-FROM node:18-alpine
+FROM node:22-alpine
 
 WORKDIR /app
 
@@ -6,15 +6,16 @@ WORKDIR /app
 RUN corepack enable
 
 # Kopiere package.json und yarn.lock (falls vorhanden) in den Container
-COPY . .
+COPY package.json yarn.lock ./
 
 # Installiere die Abhängigkeiten über Yarn
-RUN yarn install
+RUN yarn install --frozen-lockfile
 
 # Kopiere den restlichen Code
+COPY . .
 
 # Baue dein Projekt (angenommen, du hast ein Build-Skript in package.json definiert)
-
+RUN yarn build
 
 # Starte den Bot (hier wird angenommen, dass der kompiliert Code im Ordner "dist" liegt)
-CMD ["yarn", "dev"]
+CMD ["node", "dist/index.js"]
