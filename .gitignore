@@ -1,5 +1,13 @@
 node_modules
-ENV
 .env.backend
 .env.frontend
 .env.discord-bot
+.env
+yarn-error.log
+dist/
+build/
+.env*
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
