@@ -1106,7 +1106,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*":
+"@types/node@npm:*, @types/node@npm:^22.13.10":
   version: 22.13.10
   resolution: "@types/node@npm:22.13.10"
   dependencies:
@@ -2264,15 +2264,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "discord-bot@workspace:packages/discord-bot"
   dependencies:
-    "@types/node": "npm:^18.11.9"
-    discord.js: "npm:^14.11.0"
-    dotenv: "npm:^16.0.0"
+    "@types/node": "npm:^22.13.10"
+    discord.js: "npm:^14.18.0"
+    dotenv: "npm:^16.4.7"
     ts-node-dev: "npm:^2.0.0"
-    typescript: "npm:^4.9.0"
+    typescript: "npm:^5.8.2"
   languageName: unknown
   linkType: soft
 
-"discord.js@npm:^14.11.0":
+"discord.js@npm:^14.18.0":
   version: 14.18.0
   resolution: "discord.js@npm:14.18.0"
   dependencies:
@@ -2310,7 +2310,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dotenv@npm:^16.0.0, dotenv@npm:^16.4.5, dotenv@npm:~16.4.5":
+"dotenv@npm:^16.4.5, dotenv@npm:^16.4.7, dotenv@npm:~16.4.5":
   version: 16.4.7
   resolution: "dotenv@npm:16.4.7"
   checksum: 10c0/be9f597e36a8daf834452daa1f4cc30e5375a5968f98f46d89b16b983c567398a330580c88395069a77473943c06b877d1ca25b4afafcdd6d4adb549e8293462
@@ -6498,7 +6498,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:>=3 < 6":
+"typescript@npm:>=3 < 6, typescript@npm:^5.8.2":
   version: 5.8.2
   resolution: "typescript@npm:5.8.2"
   bin:
@@ -6518,7 +6518,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A>=3 < 6#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@npm%3A>=3 < 6#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A^5.8.2#optional!builtin<compat/typescript>":
   version: 5.8.2
   resolution: "typescript@patch:typescript@npm%3A5.8.2#optional!builtin<compat/typescript>::version=5.8.2&hash=5786d5"
   bin:
