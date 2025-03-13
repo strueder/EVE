@@ -3,6 +3,7 @@ node_modules
 .env.frontend
 .env.discord-bot
 .env
+install-state.gz
 yarn-error.log
 dist/
 build/
@@ -11,4 +12,3 @@ build/
 .yarn/unplugged/
 .yarn/build-state.yml
 .yarn/install-state.gz
-install-state.gz
