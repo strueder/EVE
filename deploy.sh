@@ -15,5 +15,5 @@ git pull origin prod
 git pull
 
 # Docker-Images neu bauen und Container im Hintergrund starten
-docker-compose build
+docker-compose build --no-cache
 docker-compose up -d
