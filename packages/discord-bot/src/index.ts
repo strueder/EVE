@@ -26,7 +26,7 @@ client.once('ready', () => {
 client.on('messageCreate', (message) => {
     if (message.author.bot) return;
     if (message.content.trim() === '!ping') {
-      message.channel.send('Test!!!!!!!');
+      message.channel.send('Pong!');
     }
 });
 
