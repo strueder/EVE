@@ -9,12 +9,12 @@ RUN corepack enable
 COPY . .
 
 # Installiere die Abhängigkeiten über Yarn
-RUN yarn install --frozen-lockfile
+RUN yarn install
 
 # Kopiere den restlichen Code
 
 # Baue dein Projekt (angenommen, du hast ein Build-Skript in package.json definiert)
-RUN yarn build
+
 
 # Starte den Bot (hier wird angenommen, dass der kompiliert Code im Ordner "dist" liegt)
-CMD ["node", "dist/index.js"]
+CMD ["yarn", "dev"]
