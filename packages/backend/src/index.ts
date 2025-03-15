@@ -21,7 +21,7 @@ app.get('/downloadExamDates', async (req, res) => {
         filePaths 
       });
     } else {
-      res.status(404).json({ message: 'Kein Download-Link gefunden.' });
+      res.status(404).json({ message: 'Kein Downloadlink gefunden.' });
     }
   } catch (error) {
     res.status(500).json({ error: 'Interner Serverfehler.' });
