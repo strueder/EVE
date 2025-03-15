@@ -3,7 +3,7 @@ import path from 'path';
 import { downloadExamDates } from './modules/examDatesDownloader';
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 
 // Root-Pfad: Nichts tun, hier wird einfach ein 204-Status gesendet
 app.get('/', (req, res) => {
