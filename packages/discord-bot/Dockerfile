@@ -2,6 +2,7 @@ FROM node:22-alpine
 
 WORKDIR /app
 
+RUN mkdir -p /app/dist/downloads
 # Corepack aktivieren, um Yarn zu verwenden (ab Node 16.10+ enthalten)
 RUN corepack enable
 

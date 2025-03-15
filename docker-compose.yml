@@ -24,6 +24,8 @@ services:
       - ./ENV/.env.backend
     environment:
       - NODE_ENV=production
+    volumes:
+      - /home/marvin/eve/packages/downloads:/app/downloads
     networks:
       - eve-network
 
