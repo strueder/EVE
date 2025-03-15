@@ -25,7 +25,7 @@ services:
     environment:
       - NODE_ENV=production
     volumes:
-      - /home/marvin/eve/packages/downloads:/app/downloads
+      - /home/marvin/eve/packages/discord-bot/src/downloads:/app/dist/downloads
     networks:
       - eve-network
 
