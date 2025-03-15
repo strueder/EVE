@@ -7,23 +7,25 @@ services:
       context: ./packages/frontend
       dockerfile: Dockerfile
     ports:
-      - "3000:3000"
+      - "3000:3000"  # Nur das Frontend wird nach außen exposed
     env_file:
       - ./ENV/.env.frontend
     environment:
       - NODE_ENV=production
+    networks:
+      - eve-network
 
   backend:
     container_name: eve-backend
     build:
       context: ./packages/backend
       dockerfile: Dockerfile
-    ports:
-      - "4000:4000"
     env_file:
       - ./ENV/.env.backend
     environment:
       - NODE_ENV=production
+    networks:
+      - eve-network
 
   discord-bot:
     container_name: eve-discord-bot
@@ -34,3 +36,9 @@ services:
       - ./ENV/.env.discord-bot
     environment:
       - NODE_ENV=production
+    networks:
+      - eve-network
+
+networks:
+  eve-network:
+    driver: bridge
