@@ -2318,6 +2318,7 @@ __metadata:
   resolution: "discord-bot@workspace:packages/discord-bot"
   dependencies:
     "@types/node": "npm:^22.13.10"
+    axios: "npm:^1.8.3"
     discord.js: "npm:^14.18.0"
     dotenv: "npm:^16.4.7"
     ts-node-dev: "npm:^2.0.0"
