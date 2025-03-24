@@ -4,6 +4,9 @@ FROM node:22-alpine
 # Setze das Arbeitsverzeichnis im Container
 WORKDIR /app
 
+ARG NEXT_PUBLIC_API_URL
+ENV NEXT_PUBLIC_API_URL=$NEXT_PUBLIC_API_URL
+
 # Kopiere package.json und yarn.lock (oder package-lock.json) in den Container
 COPY package.json ./
 

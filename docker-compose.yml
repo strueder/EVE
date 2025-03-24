@@ -6,6 +6,8 @@ services:
     build:
       context: ./packages/frontend
       dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_API_URL: "http://eve-backend:4000"
     ports:
       - "3000:3000"  # Nur das Frontend wird nach außen exposed
     env_file:
