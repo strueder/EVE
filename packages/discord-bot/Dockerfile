@@ -7,8 +7,8 @@ RUN mkdir -p /app/dist/downloads
 RUN corepack enable
 
 # Kopiere package.json und yarn.lock (falls vorhanden) in den Container
-COPY package.json ./
-COPY ../../yarn.lock ./ 
+COPY package.json yarn.lock ./
+
 # Installiere die Abhängigkeiten über Yarn
 RUN yarn install --frozen-lockfile
 
