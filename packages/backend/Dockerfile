@@ -6,7 +6,7 @@ WORKDIR /app
 RUN corepack enable
 
 # Kopiere package.json und yarn.lock (falls vorhanden) in den Container
-COPY package.json yarn.lock ./
+COPY package.json ./
 
 # Installiere die Abhängigkeiten über Yarn
 RUN yarn install --frozen-lockfile

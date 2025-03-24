@@ -5,7 +5,7 @@ FROM node:22-alpine
 WORKDIR /app
 
 # Kopiere package.json und yarn.lock (oder package-lock.json) in den Container
-COPY package.json yarn.lock ./
+COPY package.json ./
 
 # Installiere Abhängigkeiten (verwende Yarn oder npm – hier als Beispiel Yarn)
 RUN yarn install --frozen-lockfile
