@@ -11,7 +11,7 @@ services:
     ports:
       - "3000:3000"  # Nur das Frontend wird nach außen exposed
     env_file:
-      - ./ENV/.env.frontend
+      - ./ENV/frontend/.env
     environment:
       - NODE_ENV=production
     networks:

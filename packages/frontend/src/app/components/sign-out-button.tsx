@@ -1,7 +1,15 @@
 "use client";
 
 import { logout } from "@/lib/actions/auth";
+import { Button } from "@chakra-ui/react"
 
 export const SignOutButton = () => {
-    return <button onClick={() => logout()}>Log Out</button>
+    return (
+        <Button 
+            onClick={() => logout()}
+            colorScheme="red"
+        >
+            Log Out
+        </Button>
+    )
 }

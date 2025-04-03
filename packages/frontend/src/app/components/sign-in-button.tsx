@@ -1,7 +1,17 @@
 "use client";
 
 import { login } from "@/lib/actions/auth";
+import { Button } from "@chakra-ui/react"
+import { FaDiscord } from "react-icons/fa"
 
 export const SignInButton = () => {
-    return <button onClick={() => login()}>Sign In With Discord</button>
+    return (
+        <Button 
+            onClick={() => login()}
+            colorScheme="purple"
+            leftIcon={<FaDiscord />}
+        >
+            Sign In With Discord
+        </Button>
+    )
 }
