@@ -22,7 +22,7 @@ build/
 .yarn/install-state.gz
 downloads
 *.pack.gz
-
+trace
 .DS_Store
 Thumbs.db
 packages/frontend/.next/trace
