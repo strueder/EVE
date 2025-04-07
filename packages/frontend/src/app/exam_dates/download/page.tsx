@@ -50,7 +50,7 @@ const DownloadExamDatesPage: React.FC = () => {
     }
   }, []); // Leeres Abhängigkeitsarray, da keine externen Variablen verwendet werden
 
-  // Daten beim ersten Laden abrufen
+  // Daten beim ersten Laden abrufen.
   useEffect(() => {
     fetchExamDates();
   }, [fetchExamDates]); // fetchExamDates als Abhängigkeit hinzufügen
